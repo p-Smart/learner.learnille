@@ -47,6 +47,12 @@ const ASSETS = {
     greyusers: exportImage('./icons/greyusers.svg'),
     blueclock: exportImage('./icons/BlueClock.svg'),
     copy: exportImage('./icons/Copy.svg'),
+    visa: exportImage('./icons/visa.svg'),
+    mastercard: exportImage('./icons/masterCard.svg'),
+    redcard: exportImage('./icons/RCreditCard.svg'),
+    circlecheck: exportImage('./icons/CheckCircle.svg'),
+    paypal: exportImage('./icons/paypal.svg'),
+    bluepaycard: exportImage('./icons/BCreditCard.svg'),
 }
 
 export default ASSETS

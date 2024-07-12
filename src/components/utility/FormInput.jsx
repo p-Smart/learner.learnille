@@ -23,7 +23,8 @@ const FormInput = ({label,type,name,errorMsg, inputVal, placeholder, inputData, 
         name={name} 
         placeholder={placeholder} 
         value={inputVal} 
-        onChange={handleInputChange}/>
+        onChange={handleInputChange}
+        />
       { isError && (
         <FormErrorMessage fontSize='12px'>{errorMsg}</FormErrorMessage>
       )}

@@ -17,9 +17,9 @@ const Pay = () => {
     <MainLayout>
         <CartLayout>
            <PayForm />
-           <Box>
-              <Heading fontSize='20px'>People also checked</Heading>
-              <Grid templateColumns="repeat(auto-fit, minmax(200px, 1fr))" gap="1rem">
+           <Box mt='1rem'>
+              <Heading py='1rem' fontSize='20px'>People also checked</Heading>
+              <Grid  templateColumns="repeat(auto-fit, minmax(200px, 1fr))" gap="1rem">
                     <GridItem>
                        <ConsultionCard />
                     </GridItem>
