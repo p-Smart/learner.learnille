@@ -1,7 +1,7 @@
 export const CHAKRA_FONTS = {
-    body: "'Proxima Nova', sans-serif",
-    heading: "'Proxima Nova', Georgia, sans-serif",
-    mono: "'Proxima Nova', Georgia, sans-serif",
+    body:  "Proxima Nova, sans-serif",
+    heading:  "Proxima Nova, sans-serif",
+    mono:  "Proxima Nova, sans-serif",
 }
 
 export const CHAKRA_SIZE = {

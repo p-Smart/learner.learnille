@@ -8,7 +8,8 @@ import {
   Divider,
   Image
 } from '@chakra-ui/react'
-import ASSETS from '../../assets'
+import ASSETS from '../../../public/assets'
+
 import { Link as ReactRouterLink } from 'react-router-dom'
 import { Link as ChakraLink } from '@chakra-ui/react'
 

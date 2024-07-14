@@ -9,7 +9,7 @@ import {
   Divider,
   Image
 } from '@chakra-ui/react'
-import ASSETS from '../../assets'
+import ASSETS from '../../../public/assets'
 import { useNavigate } from 'react-router-dom'
 
 const AddToCart = () => {

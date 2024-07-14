@@ -12,8 +12,8 @@ import {
   Divider,
   Image
 } from '@chakra-ui/react'
-import ASSETS from '../../assets'
 import { useNavigate } from 'react-router-dom'
+import ASSETS from '../../../public/assets'
 
 const ConsultionCard = () => {
   const navigate = useNavigate()

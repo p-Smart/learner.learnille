@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import { routes } from "./route";
-import ASSETS from "../../assets";
+import ASSETS from "../../../public/assets";
 
 function Sidenav({ navState, setNavState }) {
     const width = navState ? "250px" : "0px";
@@ -33,6 +33,19 @@ function Sidenav({ navState, setNavState }) {
         color="white"
         whiteSpace="nowrap"
         zIndex={100}
+        css={{
+          "&::-webkit-scrollbar": {
+          width: "4px",
+          },
+          "&::-webkit-scrollbar-track": {
+          width: "6px",
+          },
+          "&::-webkit-scrollbar-thumb": {
+          background: "#FFFFFF",
+          borderRadius: "24px",
+          },
+       }}
+       overflowX="auto"
       >
         <Box w="100%">
           <HStack
@@ -96,7 +109,7 @@ function Sidenav({ navState, setNavState }) {
               color={isActive("settings") ? "#1D2026" : "white"}
               _hover={{ textDecoration:'none', background:'brand.secondary', color:'brand.grey.400'}}
             >
-              <Image src={ASSETS.link} alt='settings'/>
+              <Image src='/assets/images/Link.svg' alt='settings'/>
               Settings
             </ListItem>
             <ListItem
@@ -112,7 +125,7 @@ function Sidenav({ navState, setNavState }) {
               color={isActive("support") ? "#1D2026" : "white"}
               _hover={{ textDecoration:'none', background:'brand.secondary', color:'brand.grey.400'}}
             >
-              <Image src={ASSETS.info} alt='support'/>
+              <Image src='/assets/images/Info.svg' alt='support'/>
               Support
             </ListItem>
           </List>
@@ -130,7 +143,6 @@ function Sidenav({ navState, setNavState }) {
                   </Text>
                 </VStack>
               </HStack>
-  
               <Image src={ASSETS.logout} alt='log-out'></Image>
             </HStack>
           </VStack>

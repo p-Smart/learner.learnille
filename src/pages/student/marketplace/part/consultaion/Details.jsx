@@ -3,6 +3,7 @@ import MainLayout from '../../../../../components/layout/MainLayout'
 import ConsultationWrapper from '../../../../../components/layout/ConsultationWrapper'
 import TabsView from '../../../../../components/utility/Tabs'
 import { 
+    Image,
     Stack,
     Grid,
     GridItem,
@@ -19,7 +20,7 @@ import {
 } from '@chakra-ui/react'
 import ConsultionCard from '../../../../../components/cards/ConsultionCard'
 import ReactPlayer from 'react-player'
-
+import ASSETS from '../../../../../../public/assets'
 
 const tabOptions = [
     'Consultation overview', 'Reviews'
@@ -42,10 +43,42 @@ const ConsultationOverview = () => (
             </Box>
         </Flex>
         <Flex  rounded='lg' direction='column' p='2rem' bg='brand.white'>
-            
+           <Heading fontSize='16px'>What you will gain</Heading>
+           <Flex mt='1rem' gap='.5rem'>
+                <Box>
+                   <Image w='30px' src={ASSETS.bluecheck} alt='bluecheck'/>
+                </Box>
+                <Text fontSize='12px'>
+                Lorem ipsum dolor sit amet consectetur. Placerat tellus purus faucibus viverra sit. Augue eu fringilla faucibus mauris ultrices risus commodo justo magna. Mauris amet tincidunt ac.
+                </Text>
+           </Flex>
+           <Flex mt='1rem' gap='.5rem'>
+                <Box>
+                   <Image w='30px' src={ASSETS.bluecheck} alt='bluecheck'/>
+                </Box>
+                <Text fontSize='12px'>
+                Lorem ipsum dolor sit amet consectetur. Placerat tellus purus faucibus viverra sit. Augue eu fringilla faucibus mauris ultrices risus commodo justo magna. Mauris amet tincidunt ac.
+                </Text>
+           </Flex>
+           <Flex mt='1rem' gap='.5rem'>
+                <Box>
+                   <Image w='30px' src={ASSETS.bluecheck} alt='bluecheck'/>
+                </Box>
+                <Text fontSize='12px'>
+                Lorem ipsum dolor sit amet consectetur. Placerat tellus purus faucibus viverra sit. Augue eu fringilla faucibus mauris ultrices risus commodo justo magna. Mauris amet tincidunt ac.
+                </Text>
+           </Flex>
+           <Flex mt='1rem' gap='.5rem'>
+                <Box>
+                   <Image w='30px' src={ASSETS.bluecheck} alt='bluecheck'/>
+                </Box>
+                <Text fontSize='12px'>
+                Lorem ipsum dolor sit amet consectetur. Placerat tellus purus faucibus viverra sit. Augue eu fringilla faucibus mauris ultrices risus commodo justo magna. Mauris amet tincidunt ac.
+                </Text>
+           </Flex>
         </Flex>
         <Stack rounded='lg' p='2rem' bg='brand.white'>
-            <Heading fontSize='20px'>Instructor</Heading>
+            <Heading fontSize='16px'>Instructor</Heading>
             <Divider py='.3rem'/>
             <Flex mt='.5rem'>
                 <Flex flex='1' gap='4'>

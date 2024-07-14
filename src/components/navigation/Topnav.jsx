@@ -14,8 +14,8 @@ import {
     MenuList,
     Box,
 } from "@chakra-ui/react";
-import ASSETS from "../../assets";
-  
+import ASSETS from "../../../public/assets";
+
   function Topnav({ navState, setNavState }) {
     return (
       <HStack

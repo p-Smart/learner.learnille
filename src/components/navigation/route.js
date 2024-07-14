@@ -1,44 +1,44 @@
-import ASSETS from "../../assets"
+import ASSETS from "../../../public/assets"
 
 export const routes = [
     {
         path:'/overview',
         name:'Overview',
-        logo: ASSETS.barchart,
+        logo: '/assets/images/bar-chart.svg',
     },
     {
         path:'/consultations',
         name:'Consultations',
-        logo: ASSETS.stack,
+        logo:'/assets/images/Stack.svg',
     },
     {
         path:'/chat',
         name:'Chat',
-        logo: ASSETS.chats,
+        logo: '/assets/images/Chats.svg',
     },
     {
         path:'/my-certificate',
         name:'My Certificate',
-        logo: ASSETS.graduation,
+        logo: '/assets/images/GraduationCap.svg',
     },
     {
         path:'/my-course',
         name:'My Courses',
-        logo: ASSETS.noteblank,
+        logo: '/assets/images/NoteBlank.svg',
     },
     {
         path:'/wishlist',
         name:'Wishlist',
-        logo: ASSETS.heart,
+        logo: '/assets/images/Heart.svg',
     },
     {
         path:'/purchase-history',
         name:'Purchase History',
-        logo: ASSETS.printer,
+        logo: '/assets/images/Printer.svg',
     },
     {
         path:'/marketplace',
         name:'Marketplace',
-        logo: ASSETS.squareFour,
+        logo: '/assets/images/SquaresFour.svg',
     },
 ]

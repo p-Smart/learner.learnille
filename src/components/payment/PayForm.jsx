@@ -16,7 +16,7 @@ import {
     InputGroup
 } from '@chakra-ui/react'
 import FormInput from '../utility/FormInput'
-import ASSETS from '../../assets'
+import ASSETS from '../../../public/assets'
 
 const PayForm = () => {
   const handleInputData= () => {

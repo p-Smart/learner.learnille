@@ -8,9 +8,24 @@ function MainLayout({ children }) {
   return (
     <HStack
       alignItems="flex-start"
-      padding="20px 10px"
+      padding="3px 3px"
       bg="#F6F8FF"
       spacing={0}
+      css={{
+        "&::-webkit-scrollbar": {
+          width: "4px",
+          height:'7px',
+        },
+        "&::-webkit-scrollbar-track": {
+        width: "6px",
+        height:'7px',
+        },
+        "&::-webkit-scrollbar-thumb": {
+        background: "#4364F7",
+        borderRadius: "24px",
+        },
+     }}
+     overflowX="auto"
     >
       <Sidenav navState={navState} setNavState={setNavState} />
       <VStack ml={["0px", "0px", "250px", "250px"]} minH="100vh" w="100%">

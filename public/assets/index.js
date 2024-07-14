@@ -53,6 +53,7 @@ const ASSETS = {
     circlecheck: exportImage('./icons/CheckCircle.svg'),
     paypal: exportImage('./icons/paypal.svg'),
     bluepaycard: exportImage('./icons/BCreditCard.svg'),
+    bluecheck: exportImage('./icons/BlueCheck.svg')
 }
 
 export default ASSETS
