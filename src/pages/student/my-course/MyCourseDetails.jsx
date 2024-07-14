@@ -4,46 +4,55 @@ import CourseDetailWrapper from '../../../components/layout/CourseDetailWrapper'
 import TabsView from '../../../components/utility/Tabs'
 import { 
     Stack,
-    Grid,
-    GridItem,
+    Button,
     Flex,
     Box,
     Text,
     Heading,
 } from '@chakra-ui/react'
 import ReactPlayer from 'react-player'
-import CourseCard from '../../../components/cards/CourseCard'
 
 const tabOptions = [
     'Description', 'Lesson Note','Attached File','Comments'
 ];
   
-const Overview = () => (
-    <div>
-        Overview
-    </div>
+const Description = () => (
+    <Box>
+        <Heading fontSize='20px' py='1rem' color='#222021'>Lecture Description</Heading>
+        <Text fontSize='14px' color='#4E5566' mb='2rem'>
+        Lorem ipsum dolor sit amet consectetur. Venenatis scelerisque urna et lectus amet orci ac nibh enim. Lorem urna dolor pellentesque facilisi erat aliquet gravida. Sed enim nisl viverra molestie egestas venenatis fermentum. Lacus sollicitudin tellus mi suspendisse. Venenatis cras nisl eu sapien lacus donec condimentum morbi id. Etiam facilisi habitant suspendisse at leo viverra amet et feugiat. Fames eu imperdiet integer proin arcu. Ut dignissim est enim venenatis odio dictum sed dolor. Morbi vel ut vitae neque nec id et faucibus. Facilisi ipsum aliquam nibh ullamcorper lorem nisi. Eget volutpat nec praesent tellus.
+        Nulla in nulla sed sed eget urna laoreet egestas lectus. Tempus aliquet blandit egestas quis tristique odio ut id. Quam aliquam lectus amet vitae elit in risus. Commodo mattis platea diam tellus orci. Amet maecenas morbi vel quam congue aliquam tincidunt 
+        </Text>
+    </Box>
 );
   
-const Curriculum = () => (  
-   <Box bg='brand.white'>
-       Curriculum
+const LessonNote = () => (  
+   <Box>
+       <Flex justifyContent='space-between'>      
+            <Heading fontSize='20px' py='1rem' color='#222021'>Lecture Note</Heading>
+            <Button bg='none' color='brand.primary' fontSize='12px' fontWeight='thin'>DownLoad Notes</Button>
+       </Flex>
+        <Text fontSize='14px' color='#4E5566' mb='2rem'>
+        Lorem ipsum dolor sit amet consectetur. Venenatis scelerisque urna et lectus amet orci ac nibh enim. Lorem urna dolor pellentesque facilisi erat aliquet gravida. Sed enim nisl viverra molestie egestas venenatis fermentum. Lacus sollicitudin tellus mi suspendisse. Venenatis cras nisl eu sapien lacus donec condimentum morbi id. Etiam facilisi habitant suspendisse at leo viverra amet et feugiat. Fames eu imperdiet integer proin arcu. Ut dignissim est enim venenatis odio dictum sed dolor. Morbi vel ut vitae neque nec id et faucibus. Facilisi ipsum aliquam nibh ullamcorper lorem nisi. Eget volutpat nec praesent tellus.
+        Nulla in nulla sed sed eget urna laoreet egestas lectus. Tempus aliquet blandit egestas quis tristique odio ut id. Quam aliquam lectus amet vitae elit in risus. Commodo mattis platea diam tellus orci. Amet maecenas morbi vel quam congue aliquam tincidunt 
+        </Text>
    </Box>    
 );
   
-const Instructor = () => (  
-    <Box bg='brand.white'>
+const Attached = () => (  
+    <Box>
         Instructor
     </Box>    
 );
 
-const Review = () => (  
-<Box bg='brand.white'>
+const Comments = () => (  
+<Box>
     Curriculum
 </Box>    
 );
 
 const tabView = [
-    <Overview key="overview" />, <Curriculum key="Curriculum" />,<Instructor key='Instructor'/>,<Review key='Review'/>
+    <Description key="desc" />, <LessonNote key="lesson" />,<Attached key='attached'/>,<Comments key='comment'/>
 ];
   
 
@@ -53,10 +62,6 @@ export const MyCourseDetails = () => {
        <CourseDetailWrapper>
             <Stack>
                 <Flex direction='column' p='2rem' bg='brand.white'>
-                    <Box py='1rem'>
-                    <Heading fontSize='20px' color='brand.grey.700'>How to make your first Million as a Front-End Developer</Heading>
-                    <Text py='1rem' fontSize='14px' color='brand.grey.400'>Lorem ipsum dolor sit amet consectetur. Varius in convallis gravida sagittis faucibus est dignissim nunc diam. Et egestas vulputate sed aliquam</Text>
-                    </Box>
                     <Box width="100%" height="400px">
                         <ReactPlayer
                             url="https://www.youtube.com/watch?v=BK07WUEMvPk"
