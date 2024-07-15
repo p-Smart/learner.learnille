@@ -9,6 +9,7 @@ import {
     Box,
     Text,
     Heading,
+    Image,
 } from '@chakra-ui/react'
 import ReactPlayer from 'react-player'
 
@@ -30,7 +31,10 @@ const LessonNote = () => (
    <Box>
        <Flex justifyContent='space-between'>      
             <Heading fontSize='20px' py='1rem' color='#222021'>Lecture Note</Heading>
-            <Button bg='none' color='brand.primary' fontSize='12px' fontWeight='thin'>DownLoad Notes</Button>
+            <Button bg='none' color='brand.primary' fontSize='12px' fontWeight='thin'>
+                <Image src='/assets/icons/DownloadSimple.svg' mr='4px' alt='download'/>
+                DownLoad Notes
+            </Button>
        </Flex>
         <Text fontSize='14px' color='#4E5566' mb='2rem'>
         Lorem ipsum dolor sit amet consectetur. Venenatis scelerisque urna et lectus amet orci ac nibh enim. Lorem urna dolor pellentesque facilisi erat aliquet gravida. Sed enim nisl viverra molestie egestas venenatis fermentum. Lacus sollicitudin tellus mi suspendisse. Venenatis cras nisl eu sapien lacus donec condimentum morbi id. Etiam facilisi habitant suspendisse at leo viverra amet et feugiat. Fames eu imperdiet integer proin arcu. Ut dignissim est enim venenatis odio dictum sed dolor. Morbi vel ut vitae neque nec id et faucibus. Facilisi ipsum aliquam nibh ullamcorper lorem nisi. Eget volutpat nec praesent tellus.
@@ -40,9 +44,40 @@ const LessonNote = () => (
 );
   
 const Attached = () => (  
-    <Box>
-        Instructor
-    </Box>    
+    <Stack>
+        <Box mb='4rem'>   
+            <Box>
+                <Text py='.5rem' fontSize='14px'>Attached Files (01)</Text>
+                <Flex bg='brand.white' justifyContent='space-between' rounded='lg' p='1rem'>
+                    <Box display='flex' gap='1rem' alignItems='center'>
+                        <Image src='/assets/icons/FileText.svg'/>
+                        <Flex direction='column'>
+                            <Text color='#222021' as='span' fontSize='14px' fontWeight='bold'>Donec id diam et lacus pharet.pdf</Text>
+                            <Text as='span' fontSize='12px'>12 MB</Text>
+                        </Flex>
+                    </Box>
+                    <Box>
+                        <Button bg='brand.primary' fontSize='12px' color='brand.white'>Download File</Button>
+                    </Box>
+                </Flex>
+            </Box>    
+            <Box>
+                <Text py='.5rem' fontSize='14px'>Attached Files (01)</Text>
+                <Flex bg='brand.white' justifyContent='space-between' rounded='lg' p='1rem'>
+                    <Box display='flex' gap='1rem' alignItems='center'>
+                        <Image src='/assets/icons/FileText.svg'/>
+                        <Flex direction='column'>
+                            <Text color='#222021' as='span' fontSize='14px' fontWeight='bold'>Donec id diam et lacus pharet.pdf</Text>
+                            <Text as='span' fontSize='12px'>12 MB</Text>
+                        </Flex>
+                    </Box>
+                    <Box>
+                        <Button bg='brand.primary' fontSize='12px' color='brand.white'>Download File</Button>
+                    </Box>
+                </Flex>
+            </Box>
+        </Box>
+    </Stack>    
 );
 
 const Comments = () => (  
