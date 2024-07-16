@@ -5,9 +5,9 @@ import EventSecion from '../event/EventSecion'
 
 const CoursePageLayout = (props) => {
     return (
-      <Flex direction={{base:'column', md:'row' }} mt='1rem' gap='.5rem'>
+      <Flex direction={{base:'column', md:'row' }} mt='1rem' gap='1rem'>
           <Box w={{base:'100%'}}>{props.children}</Box>
-          <Box w={{base:'100%', lg: '350px'}}>
+          <Box w={{base:'100%', lg: '100%', xl:'500px'}}>
             <EventSecion/>   
           </Box>
       </Flex>

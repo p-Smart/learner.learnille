@@ -71,9 +71,9 @@ const navigate = useNavigate()
             </Flex>
         </Stack>
         <Divider />  
-        <Flex direction='column' p='1rem' gap='.5rem'>
-            <Box display='flex' flexDirection='column' gap='7px'>
-                <Button onClick={() => handleNavigation()} variant='solid' size='sm' bg='brand.primary' color='brand.white'>
+        <Flex direction='column' p='1rem' gap='1rem'>
+            <Box display='flex' flexDirection='column' gap='1rem'>
+                <Button onClick={() => handleNavigation()} variant='solid' h='48px' bg='brand.primary' color='brand.white'>
                     Add to Cart
                 </Button>
                 <Box 
@@ -87,18 +87,20 @@ const navigate = useNavigate()
                     fontWeight='semibold'
                     bg='brand.lightPrimary'
                     color='brand.primary'
+                    h='48px'
                 >
                     Buy Now
                 </Box>
             </Box>
-            <Flex gap='.5rem'>
+            <Flex gap='1rem'>
                 <Button 
                    fontWeight='light'
                    w='full' 
                    bg='none' border='1px' 
                    borderColor='#E8EAEE' 
                    variant='solid' 
-                   size='sm' 
+                   size='sm'
+                   h='48px' 
                    color='brand.grey.400'
                 >
                     Add to WishList
@@ -109,7 +111,8 @@ const navigate = useNavigate()
                    bg='none' border='1px' 
                    borderColor='#E8EAEE' 
                    variant='solid' 
-                   size='sm' 
+                   size='sm'
+                   h='48px' 
                    color='brand.grey.400'
                 >
                     Gift Course

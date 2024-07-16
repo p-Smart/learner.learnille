@@ -17,7 +17,7 @@ import Progress from '../progress/Progress'
 const MyCourseCard = ({hasCompleted}) => {
     return (
         <ChakraLink style={{ textDecoration: "none" }} as={ReactRouterLink} to='/marketplace/course/1'>       
-          <Card p='.5rem' flexGrow={1}>
+          <Card p='.7rem' flexGrow={1}>
             <Box>
               <Image
                 h='127px' w='100%'
@@ -26,20 +26,20 @@ const MyCourseCard = ({hasCompleted}) => {
               />
               <Progress hasCompleted={hasCompleted}/>
               { !hasCompleted && (
-                <Box mt='.5rem' justifyContent='space-between'>
-                  <Heading size='sm' fontSize='14px'>The Complete Web Development Bootcamp</Heading>
-                  <Text mt='.5rem' noOfLines='1' fontSize='12px' mb='.5rem'>167. What You'll Okay Need to Get Started</Text>
+                <Box py='.4rem' justifyContent='space-between'>
+                  <Heading size='sm' fontSize='12px' color='#222021'>The Complete Web Development Bootcamp</Heading>
+                  <Text mt='.5rem' noOfLines='1' color='#6E7485' fontSize='12px' mb='.5rem'>167. What You'll Okay Need to Get Started</Text>
                 </Box>
               )}
               <Divider />
-              <Stack pt='.5rem' justifyContent='space-between'>
+              <Stack pt='1rem' justifyContent='space-between'>
                 { hasCompleted ? (
                   <>
                     <Button w='full' bg='brand.primary' color='brand.white' fontSize='12px' h='30px'>View Certificate</Button>
                     <Button w='full' color='brand.primary' fontSize='14px' h='30px'>Watch Again</Button>
                   </>
                 ):(
-                  <Button w='full' color='brand.primary' fontSize='14px' h='30px'>Resume Course</Button>
+                  <Button w='full' color='brand.primary' fontSize='14px' h='34px'>Resume Course</Button>
                 )}
               </Stack>
             </Box>

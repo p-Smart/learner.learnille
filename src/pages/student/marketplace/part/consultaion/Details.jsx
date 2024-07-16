@@ -173,7 +173,7 @@ const MKTConsultDetails = () => {
             <TabsView tab={tabOptions} view={tabView}/> 
             <Box m='1rem'>
                 <Text fontWeight='bold' py='1rem'>Similar Consultations</Text>
-                <Grid templateColumns="repeat(auto-fit, minmax(200px, 1fr))" gap="1rem">
+                <Grid templateColumns="repeat(auto-fit, minmax(337px, 1fr))" gap="1rem">
                     <GridItem>
                        <ConsultionCard />
                     </GridItem>

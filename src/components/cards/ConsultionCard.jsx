@@ -22,7 +22,7 @@ const ConsultionCard = () => {
   }
 
   return (
-      <Card p='.5rem' flexGrow={1}>
+      <Card p='.7rem' flexGrow={1}>
         <Box>
           <Image
               h='180px' w='100%'
@@ -42,7 +42,7 @@ const ConsultionCard = () => {
               <Image src={ASSETS.viewMore} alt='more-options'/>
             </Box>
           </Flex>
-          <Flex m='1rem 0px' justifyContent='space-between'>
+          <Flex py='.2rem' m='1rem 0px' justifyContent='space-between'>
             <Flex gap='3px' alignItems='center'>
               <Image src={ASSETS.clock} alt='more-options'/>
               <Text fontWeight='bold' color='brand.grey.700' fontSize='12px'>4 hours</Text>
@@ -57,7 +57,7 @@ const ConsultionCard = () => {
             </Flex>
           </Flex>
           <Divider />
-          <Flex gap='1rem' mt='.5rem' mb='.5rem' justifyContent='space-between'>
+          <Flex gap='1rem' py='1rem' justifyContent='space-between'>
             <Flex gap='1rem' alignItems='center'>
             <Wrap>
               <WrapItem>
@@ -74,12 +74,12 @@ const ConsultionCard = () => {
           </Flex>
         </Box>
         <Box display='flex' flexDirection='column' gap='7px'>
-            <Button variant='solid' size='sm' bg='brand.primary' color='brand.white'>
+            <Button variant='solid' h='45px' bg='brand.primary' color='brand.white'>
               Book
             </Button>
               <Box 
+                h='45px'
                 as='button' 
-                height='30px'
                 lineHeight='1.2'
                 transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
                 border='1px'

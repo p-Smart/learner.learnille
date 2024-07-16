@@ -16,7 +16,7 @@ import { Link as ChakraLink } from '@chakra-ui/react'
 const CourseCard = () => {
     return (
         <ChakraLink style={{ textDecoration: "none" }} as={ReactRouterLink} to='/marketplace/course/1'>       
-          <Card p='.5rem' flexGrow={1}>
+          <Card p='.7rem' flexGrow={1}>
             <Box>
               <Image
                 h='180px' w='100%'
@@ -42,7 +42,7 @@ const CourseCard = () => {
                 </Flex>
               </Flex>
               <Divider />
-              <Flex pt='.5rem' justifyContent='space-between'>
+              <Flex pt='1rem' justifyContent='space-between'>
                 <Flex gap='5px'>
                       <Text fontWeight='bold' fontSize='12px'>$14.00</Text>
                       <Text as='s' fontSize='12px' color='#A1A5B3'>$26.00</Text>

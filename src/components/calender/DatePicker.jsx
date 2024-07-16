@@ -13,7 +13,7 @@ const DatePicker = () => {
         onChange={onChange} 
         value={value} 
       />
-      <Divider/>
+      <Divider mt='1.5rem'/>
       <Text textAlign='center' p='1rem' color='brand.primary' fontWeight='bold'>3 events</Text>
     </Box>
   );

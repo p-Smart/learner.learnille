@@ -22,7 +22,7 @@ const EventSecion = () => {
   }
 
   return (
-    <>
+    <Box>
       <DatePicker/>
       <Card mt='1rem'>
         <Heading p='1rem' fontSize='17px'>Upcoming Events</Heading>
@@ -46,7 +46,7 @@ const EventSecion = () => {
           </Accordion>
         </Box>
       </Card>
-    </>
+    </Box>
   )
 }
 
