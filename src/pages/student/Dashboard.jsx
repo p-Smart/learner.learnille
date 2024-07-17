@@ -1,6 +1,7 @@
-import React from 'react'
-import MainLayout from '../../components/layout/MainLayout'
-import CoursePageLayout from '../../components/layout/CoursePageLayout'
+import React from 'react';
+import MainLayout from '../../components/layout/MainLayout';
+import CoursePageLayout from '../../components/layout/CoursePageLayout';
+import BarChartUtils from '../../components/chart/BarChart';
 import { 
   Grid, 
   GridItem, 
@@ -9,16 +10,22 @@ import {
   Box,
   Image,
   Text,
-} from '@chakra-ui/react'
-import MyCourseCard from '../../components/cards/MyCourseCard'
+} from '@chakra-ui/react';
+import MyCourseCard from '../../components/cards/MyCourseCard';
+import PieChartUtils from '../../components/chart/PieChart';
+
 
 const Dashboard = () => {
   return (
     <MainLayout>
       <CoursePageLayout>
-        <Flex gap='1rem' mb='1rem'>
-          <Box h='92px' bg='brand.white' flex='2' rounded='lg' p='1rem'>Box Makanju</Box>
-          <Box flex='1' h='92px' bg='brand.white' rounded='lg' p='1rem'>Box makanju</Box>
+        <Flex direction={{base: 'column', md: 'row'}} gap='1rem' mb='1rem'>
+          <Box h='100%' bg='brand.white' flex='2' rounded='lg' p='1rem'>
+            <BarChartUtils />
+          </Box>
+          <Box flex='1' bg='brand.white' rounded='lg' p='1rem'>
+            <PieChartUtils/>
+          </Box>
         </Flex>
         <Flex direction={{base: 'column', md: 'row'}} gap='1rem'>
           <Flex direction='column' gap='1rem' flex='1'>
@@ -102,4 +109,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default Dashboard;
