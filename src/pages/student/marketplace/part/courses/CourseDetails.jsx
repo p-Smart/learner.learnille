@@ -11,39 +11,35 @@ import {
     Text,
     Heading,
 } from '@chakra-ui/react'
-import ReactPlayer from 'react-player'
-import CourseCard from '../../../../../components/cards/CourseCard'
+import ReactPlayer from 'react-player';
+import CourseCard from '../../../../../components/cards/CourseCard';
+import Overview from './part/Overview'
+import Review from './part/Review'
+import Instructor from './part/Instructor'
+import Curriculum from './part/Curriculum'
 
 const tabOptions = [
     'Overview', 'Curriculum','Instructor','Review'
 ];
   
-const Overview = () => (
-    <div>
-        Overview
-    </div>
+const OverviewPart = () => (
+    <Overview/>
 );
   
-const Curriculum = () => (  
-   <Box bg='brand.white'>
-       Curriculum
-   </Box>    
+const CurriculumPart = () => (  
+   <Curriculum/>    
 );
   
-const Instructor = () => (  
-    <Box bg='brand.white'>
-        Instructor
-    </Box>    
+const InstructorPart = () => (  
+    <Instructor/>   
 );
 
-const Review = () => (  
-<Box bg='brand.white'>
-    Curriculum
-</Box>    
+const ReviewPart = () => (  
+    <Review/> 
 );
 
 const tabView = [
-    <Overview key="overview" />, <Curriculum key="Curriculum" />,<Instructor key='Instructor'/>,<Review key='Review'/>
+    <OverviewPart key="overview" />, <CurriculumPart key="Curriculum" />,<InstructorPart key='Instructor'/>,<ReviewPart key='Review'/>
 ];
   
 
@@ -68,9 +64,9 @@ export const CourseDetails = () => {
                 </Flex>
             </Stack>
             <TabsView tab={tabOptions} view={tabView}/> 
-            <Box>
+            <Box mb='3rem'>
                 <Text fontWeight='bold' py='1rem'>Related Courses</Text>
-                <Grid templateColumns="repeat(auto-fit, minmax(337px, 1fr))" gap="1rem">
+                <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap="1rem">
                     <GridItem>
                        <CourseCard />
                     </GridItem>

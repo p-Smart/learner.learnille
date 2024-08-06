@@ -9,8 +9,10 @@ import {
     Image,
     Heading,
 } from '@chakra-ui/react'
+import { useNavigate } from 'react-router-dom'
 
 const Cart = () => {
+  const navigate = useNavigate()
   return (
     <Card flexGrow={1}>
       <Box>
@@ -51,6 +53,7 @@ const Cart = () => {
                 </Flex>
 
                 <Button
+                    onClick={() => navigate('/pay')}
                     mb='1rem' 
                     bg='brand.primary' 
                     color='brand.white'>

@@ -87,19 +87,21 @@ const ConsultationOverview = () => (
                         <Box display='flex' flexDirection='column'>
                            <Heading fontSize='20px' color='brand.grey.700'>Adigun kofoworola Aduke</Heading>
                            <Text py='.5rem' fontSize='12px' color='brand.grey.400'>Enterpreneur & Designer &bull; Founder of shiftride</Text>
-                           <Flex>
-                              <Box display='flex' alignItems='center'>
-                                <Text fontWeight='bold'>4.6</Text>
+                           <Flex gap='1rem' py='.5rem'>
+                              <Box display='flex' gap='4px' alignItems='center'>
+                                <div>&#11088;</div>
+                                <Text fontSize='12px' fontWeight='bold'>4.6</Text>
+                                <Text fontSize='12px'>Course rating</Text>
+                              </Box>
+                              <Box display='flex' gap='4px' alignItems='center'>
+                                <Image w='16px' src='/assets/images/Users.svg' alt='people'/>
+                                <Text fontWeight='bold' fontSize='12px'>65</Text>
+                                <Text fontSize='12px'>Active Student</Text>
                               </Box>
                               <Box display='flex' alignItems='center'>
-                                
-                                <Text fontWeight='bold'>4.6</Text>
-                                <Text>Total conultation done</Text>
-                              </Box>
-                              <Box display='flex' alignItems='center'>
-                                
-                                <Text fontWeight='bold'>01</Text>
-                                <Text>Courses</Text>
+                                <Image w='16px' src='/assets/icons/PlayYout.svg' alt='people'/>
+                                <Text fontSize='12px' fontWeight='bold'>01</Text>
+                                <Text fontSize='12px'>Courses</Text>
                               </Box>
                            </Flex>
                         </Box>

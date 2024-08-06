@@ -28,8 +28,8 @@ const AppRouter = () => {
         <Route path="/marketplace" element={<MarketPlacePage/> } />
         <Route path="/marketplace/consultation/:id" element={<MKTConsultDetails/> } />
         <Route path="/marketplace/course/:id" element={<CourseDetails/> } />
-        <Route path="/marketplace/cart" element={<MarketPlaceCart/> } />
-        <Route path="/marketplace/cart/pay" element={<Pay/> } />
+        <Route path="/cart" element={<MarketPlaceCart/> } />
+        <Route path="/pay" element={<Pay/> } />
         <Route path="/my-certificate" element={<MyCerificate/> } />
         <Route path="/my-course" element={<MyCourse/>} />
         <Route path="/my-course/:id" element={<MyCourseDetails/>} />

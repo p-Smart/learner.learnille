@@ -2,6 +2,8 @@ import React from 'react'
 import MainLayout from '../../../components/layout/MainLayout'
 import CourseDetailWrapper from '../../../components/layout/CourseDetailWrapper'
 import TabsView from '../../../components/utility/Tabs'
+import Comment from './part/Comment'
+
 import { 
     Stack,
     Button,
@@ -48,7 +50,7 @@ const Attached = () => (
         <Box mb='4rem'>   
             <Box>
                 <Text py='.5rem' fontSize='14px'>Attached Files (01)</Text>
-                <Flex bg='brand.white' justifyContent='space-between' rounded='lg' p='1rem'>
+                <Flex bg='brand.white' alignItems='center' justifyContent='space-between' rounded='lg' p='1rem'>
                     <Box display='flex' gap='1rem' alignItems='center'>
                         <Image src='/assets/icons/FileText.svg'/>
                         <Flex direction='column'>
@@ -57,13 +59,13 @@ const Attached = () => (
                         </Flex>
                     </Box>
                     <Box>
-                        <Button bg='brand.primary' fontSize='12px' color='brand.white'>Download File</Button>
+                        <Button bg='brand.primary' h='42px' fontSize='12px' color='brand.white'>Download File</Button>
                     </Box>
                 </Flex>
             </Box>    
             <Box>
                 <Text py='.5rem' fontSize='14px'>Attached Files (01)</Text>
-                <Flex bg='brand.white' justifyContent='space-between' rounded='lg' p='1rem'>
+                <Flex bg='brand.white' justifyContent='space-between' alignItems='center' rounded='lg' p='1rem'>
                     <Box display='flex' gap='1rem' alignItems='center'>
                         <Image src='/assets/icons/FileText.svg'/>
                         <Flex direction='column'>
@@ -72,7 +74,7 @@ const Attached = () => (
                         </Flex>
                     </Box>
                     <Box>
-                        <Button bg='brand.primary' fontSize='12px' color='brand.white'>Download File</Button>
+                        <Button bg='brand.primary' h='42px' fontSize='12px' color='brand.white'>Download File</Button>
                     </Box>
                 </Flex>
             </Box>
@@ -82,7 +84,10 @@ const Attached = () => (
 
 const Comments = () => (  
 <Box>
-    Curriculum
+    <Heading fontSize='20px'  py='1.5rem' color='#222021'>Comments (154)</Heading>
+    <Comment/>
+    <Comment/>
+    <Comment/>
 </Box>    
 );
 

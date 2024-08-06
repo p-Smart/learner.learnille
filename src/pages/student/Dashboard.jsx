@@ -14,7 +14,6 @@ import {
 import MyCourseCard from '../../components/cards/MyCourseCard';
 import PieChartUtils from '../../components/chart/PieChart';
 
-
 const Dashboard = () => {
   return (
     <MainLayout>

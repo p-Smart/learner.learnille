@@ -15,7 +15,7 @@ import { useNavigate } from 'react-router-dom'
 const AddToCart = () => {
 const navigate = useNavigate()
   const handleNavigation = () => {
-    navigate('marketplace/cart')
+    navigate('/cart')
   }
 
   return (
