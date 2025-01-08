@@ -1,10 +1,6 @@
-import { VStack, HStack, Text, Select, Progress, Box } from "@chakra-ui/react";
+import { VStack, HStack, Text, Select, Progress } from "@chakra-ui/react";
 import ReactStars from "react-rating-stars-component";
-import {
-  AreaChart,
-  Area,
-  ResponsiveContainer,
-} from "recharts";
+import { AreaChart, Area, ResponsiveContainer } from "recharts";
 
 const data = [
   {
@@ -62,11 +58,7 @@ function ConsultationRating() {
         <Text as="h3" fontSize="14px" fontWeight="600">
           Overall Course Rating
         </Text>
-        <Select
-          placeholder="Today"
-          variant="unstyled"
-          w="80px"
-        >
+        <Select placeholder="Today" variant="unstyled" w="80px">
           <option>Last Week</option>
           <option>This Month</option>
         </Select>
