@@ -11,7 +11,7 @@ export default function NavUser() {
     >
       <Flex alignItems={"center"} gap="10px">
         <Image
-          src="/assets/images/avatars/avatar02.svg"
+          src="/assets/images/avatars/avatar-03.svg"
           w="40px"
           h="40px"
           borderRadius="50%"
