@@ -1,19 +1,19 @@
-import Chat from "../pages/student/Chat";
-import Consultation from "../pages/student/consultion/Consultation";
-import ConsultationDetails from "../pages/student/consultion/part/Details";
-import MyCerificate from "../pages/student/MyCerificate";
-import MyCourse from "../pages/student/my-course/MyCourse";
-import PurchaseHistory from "../pages/student/PurchaseHistory";
-import MKTConsultDetails from "../pages/student/marketplace/part/consultaion/Details";
-import MarketPlacePage from "../pages/student/marketplace/MarketPlacePage";
-import CourseDetails from "../pages/student/marketplace/part/courses/CourseDetails";
-import MarketPlaceCart from "../pages/student/marketplace/part/cart/MarketPlaceCart";
-import WishList from "../pages/student/wishlist/WishList";
+import Chat from "../pages/Chat/Chat";
+import Consultation from "../pages/consultion/Consultation";
+import ConsultationDetails from "../pages/consultion/part/Details";
+import MyCerificate from "../pages/MyCerificate";
+import MyCourse from "../pages/my-course/MyCourse";
+import PurchaseHistory from "../pages/PurchaseHistory";
+import MKTConsultDetails from "../pages/marketplace/part/consultaion/Details";
+import MarketPlacePage from "../pages/marketplace/MarketPlacePage";
+import CourseDetails from "../pages/marketplace/part/courses/CourseDetails";
+import MarketPlaceCart from "../pages/marketplace/part/cart/MarketPlaceCart";
+import WishList from "../pages/wishlist/WishList";
 import { Routes, Route, Navigate } from "react-router-dom";
 import NotFound from "../pages/NotFound";
-import Pay from "../pages/student/marketplace/part/make-payment/Pay";
-import MyCourseDetails from "../pages/student/my-course/MyCourseDetails";
-import Overview from "../pages/student/Overview";
+import Pay from "../pages/marketplace/part/make-payment/Pay";
+import MyCourseDetails from "../pages/my-course/MyCourseDetails";
+import Overview from "../pages/Overview";
 
 const AppRouter = () => {
   return (

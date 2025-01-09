@@ -1,4 +1,4 @@
-import DashboardLayout from "@/components/layout/DashboardLayout";
+import DashboardLayout from "@/layout/DashboardLayout";
 import { Stack, Text } from "@chakra-ui/react";
 
 function PageUnderConstruction() {
