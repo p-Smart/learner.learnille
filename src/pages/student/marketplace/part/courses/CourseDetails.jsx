@@ -1,4 +1,4 @@
-import MainLayout from "../../../../../components/layout/MainLayout";
+import MainLayout from "../../../../../components/layout/DashboardLayout";
 import ConsultationWrapper from "../../../../../components/layout/ConsultationWrapper";
 import TabsView from "../../../../../components/utility/Tabs";
 import {

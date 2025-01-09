@@ -1,13 +1,13 @@
-import React from 'react'
-import MarketPlace from '../../../components/student/marketplace/MarketPlace'
-import MainLayout from '../../../components/layout/MainLayout'
+import React from "react";
+import MarketPlace from "../../../components/student/marketplace/MarketPlace";
+import MainLayout from "../../../components/layout/DashboardLayout";
 
 const MarketPlacePage = () => {
   return (
     <MainLayout>
-      <MarketPlace/>
+      <MarketPlace />
     </MainLayout>
-  )
-}
+  );
+};
 
-export default MarketPlacePage
+export default MarketPlacePage;

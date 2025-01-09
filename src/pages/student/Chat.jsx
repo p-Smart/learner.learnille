@@ -1,4 +1,4 @@
-import MainLayout from "../../components/layout/MainLayout";
+import MainLayout from "../../components/layout/DashboardLayout";
 import ChatLayout from "../../components/layout/ChatLayout";
 import {
   Stack,

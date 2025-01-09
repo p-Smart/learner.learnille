@@ -1,7 +1,6 @@
 import Chat from "../pages/student/Chat";
 import Consultation from "../pages/student/consultion/Consultation";
 import ConsultationDetails from "../pages/student/consultion/part/Details";
-import Dashboard from "../pages/student/Dashboard";
 import MyCerificate from "../pages/student/MyCerificate";
 import MyCourse from "../pages/student/my-course/MyCourse";
 import PurchaseHistory from "../pages/student/PurchaseHistory";
@@ -14,6 +13,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import NotFound from "../pages/NotFound";
 import Pay from "../pages/student/marketplace/part/make-payment/Pay";
 import MyCourseDetails from "../pages/student/my-course/MyCourseDetails";
+import Overview from "../pages/student/Overview";
 
 const AppRouter = () => {
   return (
@@ -22,7 +22,7 @@ const AppRouter = () => {
       <Route path="/chat" element={<Chat />} />
       <Route path="/consultations" element={<Consultation />} />
       <Route path="/consultations/:id" element={<ConsultationDetails />} />
-      <Route path="/overview" element={<Dashboard />} />
+      <Route path="/overview" element={<Overview />} />
       <Route path="/marketplace" element={<MarketPlacePage />} />
       <Route
         path="/marketplace/consultation/:id"
