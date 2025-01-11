@@ -22,7 +22,7 @@ function DashboardLayout({ children }: { children: React.ReactNode }) {
       <Stack
         filter={showMobileSidebar ? "blur(2px)" : "unset"}
         pointerEvents={showMobileSidebar ? "none" : "auto"}
-        mt={{ base: "70px", lg: "76px" }}
+        mt={{ base: "70px", md: "80px" }}
         pl={{ lg: "240px" }}
         pt="10px"
         w="100%"

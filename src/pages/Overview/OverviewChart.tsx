@@ -49,7 +49,7 @@ function OverviewChart() {
             </linearGradient>
           </defs>
           <XAxis dataKey="day" />
-          <YAxis />
+          <YAxis tickFormatter={(value) => `${value}h`} />
           <Tooltip />
           <Area
             type="monotone"
