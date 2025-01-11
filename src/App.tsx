@@ -18,6 +18,8 @@ import Pay from "@/pages/marketplace/part/make-payment/Pay";
 import MyCourseDetails from "@/pages/my-course/MyCourseDetails";
 import Overview from "@/pages/Overview/Overview";
 import Settings from "./pages/Settings";
+import Notifications from "./pages/Notifications/Notifications";
+import Activities from "./pages/Notifications/Activities";
 
 const GlobalStyles = css`
   /*
@@ -42,6 +44,8 @@ function App() {
         <Route path="/consultations/:id" element={<ConsultationDetails />} />
         <Route path="/marketplace" element={<MarketPlacePage />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/notifications" element={<Notifications />} />
+        <Route path="/notifications/activity" element={<Activities />} />
         <Route
           path="/marketplace/consultation/:id"
           element={<MKTConsultDetails />}
