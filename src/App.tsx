@@ -17,6 +17,7 @@ import NotFound from "@/pages/NotFound";
 import Pay from "@/pages/marketplace/part/make-payment/Pay";
 import MyCourseDetails from "@/pages/my-course/MyCourseDetails";
 import Overview from "@/pages/Overview/Overview";
+import Settings from "./pages/Settings";
 
 const GlobalStyles = css`
   /*
@@ -40,6 +41,7 @@ function App() {
         <Route path="/consultations" element={<Consultation />} />
         <Route path="/consultations/:id" element={<ConsultationDetails />} />
         <Route path="/marketplace" element={<MarketPlacePage />} />
+        <Route path="/settings" element={<Settings />} />
         <Route
           path="/marketplace/consultation/:id"
           element={<MKTConsultDetails />}
@@ -48,8 +50,8 @@ function App() {
         <Route path="/cart" element={<MarketPlaceCart />} />
         <Route path="/pay" element={<Pay />} />
         <Route path="/my-certificate" element={<MyCerificate />} />
-        <Route path="/my-course" element={<MyCourse />} />
-        <Route path="/my-course/:id" element={<MyCourseDetails />} />
+        <Route path="/my-courses" element={<MyCourse />} />
+        <Route path="/my-courses/:id" element={<MyCourseDetails />} />
         <Route path="/purchase-history" element={<PurchaseHistory />} />
         <Route path="/wishlist" element={<WishList />} />
         <Route path="*" element={<NotFound />} />

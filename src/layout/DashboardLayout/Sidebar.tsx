@@ -22,7 +22,7 @@ const navItemObj = [
     iconAs: PiStackDuotone,
     path: "/consultations",
   },
-  { pathName: "My Courses", iconAs: IoDocumentOutline, path: "/my-course" },
+  { pathName: "My Courses", iconAs: IoDocumentOutline, path: "/my-courses" },
   { pathName: "Chat", iconAs: PiChats, path: "/chat" },
   {
     pathName: "My Certificate",
