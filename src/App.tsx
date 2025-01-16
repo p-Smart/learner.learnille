@@ -2,8 +2,6 @@ import { BrowserRouter } from "react-router-dom";
 import "focus-visible/dist/focus-visible";
 import { Global, css } from "@emotion/react";
 import Chat from "@/pages/Chat/Chat";
-import Consultation from "@/pages/consultion/Consultation";
-import ConsultationDetails from "@/pages/consultion/part/Details";
 import MyCerificate from "@/pages/MyCerificate";
 import MyCourse from "@/pages/my-course/MyCourse";
 import PurchaseHistory from "@/pages/PurchaseHistory";
@@ -20,6 +18,8 @@ import Overview from "@/pages/Overview/Overview";
 import Settings from "./pages/Settings";
 import Notifications from "./pages/Notifications/Notifications";
 import Activities from "./pages/Notifications/Activities";
+import Consultation from "./pages/consultation/Consultation";
+import VirtualCall from "./pages/VirtualCall";
 
 const GlobalStyles = css`
   /*
@@ -41,7 +41,6 @@ function App() {
         <Route path="/overview" element={<Overview />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/consultations" element={<Consultation />} />
-        <Route path="/consultations/:id" element={<ConsultationDetails />} />
         <Route path="/marketplace" element={<MarketPlacePage />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/notifications" element={<Notifications />} />
@@ -58,6 +57,7 @@ function App() {
         <Route path="/my-courses/:id" element={<MyCourseDetails />} />
         <Route path="/purchase-history" element={<PurchaseHistory />} />
         <Route path="/wishlist" element={<WishList />} />
+        <Route path="/call" element={<VirtualCall />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
