@@ -3,7 +3,7 @@ import "focus-visible/dist/focus-visible";
 import { Global, css } from "@emotion/react";
 import Chat from "@/pages/Chat/Chat";
 import MyCerificate from "@/pages/MyCerificate";
-import MyCourse from "@/pages/my-course/MyCourse";
+import MyCourse from "@/pages/my-courses/MyCourses";
 import PurchaseHistory from "@/pages/PurchaseHistory";
 import MKTConsultDetails from "@/pages/marketplace/part/consultaion/Details";
 import MarketPlacePage from "@/pages/marketplace/MarketPlacePage";
@@ -13,12 +13,12 @@ import WishList from "@/pages/wishlist/WishList";
 import { Routes, Route, Navigate } from "react-router-dom";
 import NotFound from "@/pages/NotFound";
 import Pay from "@/pages/marketplace/part/make-payment/Pay";
-import MyCourseDetails from "@/pages/my-course/MyCourseDetails";
+import MyCourseDetails from "@/pages/my-courses/MyCourseDetails";
 import Overview from "@/pages/Overview/Overview";
 import Settings from "./pages/Settings";
 import Notifications from "./pages/Notifications/Notifications";
 import Activities from "./pages/Notifications/Activities";
-import Consultation from "./pages/consultation/Consultation";
+import Consultation from "./pages/consultation/Consultations";
 import VirtualCall from "./pages/VirtualCall";
 
 const GlobalStyles = css`

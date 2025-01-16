@@ -1,8 +1,7 @@
-import React from "react";
 import MainLayout from "../../layout/DashboardLayout";
 import CourseDetailWrapper from "../../layout/CourseDetailWrapper";
 import TabsView from "../../components/utility/Tabs";
-import Comment from "./part/Comment";
+import Comment from "./Comment";
 
 import {
   Stack,

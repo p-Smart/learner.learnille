@@ -1,4 +1,4 @@
-import MainLayout from "@/layout/DashboardLayout";
+import DashboardLayout from "@/layout/DashboardLayout";
 import {
   Box,
   Flex,
@@ -13,7 +13,7 @@ import TabList from "@/components/TabList";
 import OnGoingConsultations from "./OnGoingConsultations";
 import CompletedConsultations from "./CompletedConsultations";
 
-const Consultation = () => {
+const Consultations = () => {
   const tips = [
     {
       tipTitle: "#1 Tip for a successful meeting",
@@ -53,9 +53,9 @@ const Consultation = () => {
   ];
 
   return (
-    <MainLayout>
+    <DashboardLayout>
       <Flex direction={{ base: "column", xl: "row" }} mt="1rem" gap="1rem">
-        <Box w={{base: "100%", xl: "500px"}} flex="1">
+        <Box w={{ base: "100%", xl: "500px" }} flex="1">
           <Tabs
           // index={currentIndex}
           >
@@ -149,8 +149,8 @@ const Consultation = () => {
           ))}
         </Stack>
       </Flex>
-    </MainLayout>
+    </DashboardLayout>
   );
 };
 
-export default Consultation;
+export default Consultations;
