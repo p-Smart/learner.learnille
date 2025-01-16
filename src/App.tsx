@@ -4,7 +4,6 @@ import { Global, css } from "@emotion/react";
 import Chat from "@/pages/Chat/Chat";
 import MyCerificate from "@/pages/MyCerificate";
 import MyCourse from "@/pages/my-courses/MyCourses";
-import PurchaseHistory from "@/pages/PurchaseHistory";
 import MKTConsultDetails from "@/pages/marketplace/part/consultaion/Details";
 import MarketPlacePage from "@/pages/marketplace/MarketPlacePage";
 import CourseDetails from "@/pages/marketplace/part/courses/CourseDetails";
@@ -20,6 +19,7 @@ import Notifications from "./pages/Notifications/Notifications";
 import Activities from "./pages/Notifications/Activities";
 import Consultation from "./pages/consultation/Consultations";
 import VirtualCall from "./pages/VirtualCall";
+import PurchaseHistory from "./pages/PurchaseHistory";
 
 const GlobalStyles = css`
   /*
