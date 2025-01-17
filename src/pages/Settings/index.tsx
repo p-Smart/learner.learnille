@@ -75,6 +75,7 @@ export default function Settings() {
           justifyContent="space-between"
           bgColor="white"
           rounded="md"
+          flexWrap="wrap"
         >
           <Flex gap="20px" alignItems="center">
             <Box

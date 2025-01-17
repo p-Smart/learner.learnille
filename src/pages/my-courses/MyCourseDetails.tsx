@@ -1,5 +1,4 @@
 import MainLayout from "../../layout/DashboardLayout";
-import CourseDetailWrapper from "../../layout/CourseDetailWrapper";
 import TabsView from "../../components/utility/Tabs";
 import Comment from "./Comment";
 
@@ -13,6 +12,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import ReactPlayer from "react-player";
+import Section from "@/components/Curriculum/Section";
 
 const tabOptions = ["Description", "Lesson Note", "Attached File", "Comments"];
 
@@ -162,23 +162,84 @@ const tabView = [
 ];
 
 export const MyCourseDetails = () => {
+  let subSection = {
+    title: "Getting Started with graphics design",
+    lectures: [
+      {
+        title: `What's is Webflow?`,
+        type: "video",
+        sizeDuration: "07:31",
+      },
+      {
+        title: `What's is Webflow?`,
+        type: "video",
+        sizeDuration: "07:31",
+      },
+      {
+        title: `Webflow Terms & Conditions`,
+        type: "doc",
+        sizeDuration: "5.3 MB",
+      },
+      {
+        title: `What's is Webflow?`,
+        type: "video",
+        sizeDuration: "07:31",
+      },
+      {
+        title: `What's is Webflow?`,
+        type: "video",
+        sizeDuration: "07:31",
+      },
+    ],
+    duration: {
+      h: 4,
+      m: 50,
+    },
+  };
+  let section = {
+    title: "Introduction to UX Writing",
+    price: "14",
+    old_price: "26",
+    duration: { h: 19, m: 27 },
+    subSections: Array.from({ length: 3 }).map((_, id) => ({
+      ...subSection,
+      id,
+    })),
+  };
+  let sections = Array.from({ length: 5 }).map((_, id) => ({ ...section, id }));
+
   return (
     <MainLayout>
-      <CourseDetailWrapper>
-        <Stack>
-          <Flex direction="column" p="2rem" bg="brand.white">
-            <Box width="100%" height="400px">
-              <ReactPlayer
-                url="https://www.youtube.com/watch?v=BK07WUEMvPk"
-                width="100%"
-                height="100%"
-                controls
-              />
-            </Box>
-          </Flex>
+      <Flex gap="10px" flexDir={{ base: "column", xl: "row" }}>
+        <Stack flex="1">
+          <Box width="100%" height="400px">
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=BK07WUEMvPk"
+              width="100%"
+              height="100%"
+              controls
+            />
+          </Box>
+          <TabsView tab={tabOptions} view={tabView} />
         </Stack>
-        <TabsView tab={tabOptions} view={tabView} />
-      </CourseDetailWrapper>
+        <Stack w={{ base: "100%", xl: "500px" }} maxW="100%">
+          <Stack
+            bgColor="white"
+            border="none"
+            p={{ base: "20px 0", md: "30px 0" }}
+            borderRadius="12px"
+          >
+            {sections.map((section, k) => (
+              <Section
+                key={k + section.id}
+                count={k + 1}
+                {...section}
+                lastItem={k === sections.length - 1}
+              />
+            ))}
+          </Stack>
+        </Stack>
+      </Flex>
     </MainLayout>
   );
 };
