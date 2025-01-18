@@ -119,9 +119,9 @@ export default function Settings() {
               <b>Catherine Blessing</b>
             </Text>
           </Flex>
-          <ButtonArrow as={Link} to={APP_URLS.PUBLIC + "/tutor"}>
+          {/* <ButtonArrow as={Link} to={APP_URLS.PUBLIC + "/tutor"}>
             Become an Instructor
-          </ButtonArrow>
+          </ButtonArrow> */}
         </HStack>
         <Box
           as="form"

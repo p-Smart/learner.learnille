@@ -1,4 +1,4 @@
-import { Box, VStack, Divider, Stack } from "@chakra-ui/react";
+import { Box, VStack, Divider, Stack, Flex, Button } from "@chakra-ui/react";
 import { MdOutlineContactSupport, MdSettings } from "react-icons/md";
 import { BiSignal4 } from "react-icons/bi";
 import {
@@ -14,6 +14,8 @@ import Logo from "@/components/Logo";
 import NavItem from "./nav-item";
 import NavUser from "./NavUser";
 import { IoDocumentOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { APP_URLS } from "@/utils/constants";
 
 const navItemObj = [
   { pathName: "Overview", iconAs: BiSignal4, path: "/overview" },
@@ -109,6 +111,21 @@ function Sidebar() {
         </Stack>
 
         <Box mt={"3rem"}>
+          <Flex justifyContent="center">
+            <Button
+              bgColor="white"
+              color="black"
+              _hover={{
+                bgColor: "whiteAlpha.800",
+              }}
+              fontSize=".9rem"
+              as={Link}
+              to={APP_URLS.PUBLIC + "/tutor"}
+            >
+              Earn with Learnille
+            </Button>
+          </Flex>
+
           <Divider borderColor="white" my="20px" />
 
           <NavUser />
