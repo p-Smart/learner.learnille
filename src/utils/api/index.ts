@@ -2,7 +2,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 export const LearnilleClient = axios.create({
-  baseURL: "http://154.53.47.109:3000",
+  baseURL: "https://api-test.learnille.com",
 });
 
 LearnilleClient.interceptors.request.use(
