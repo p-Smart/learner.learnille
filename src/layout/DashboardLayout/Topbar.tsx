@@ -110,11 +110,7 @@ function Topbar() {
             <MenuItem as={Link} to="/settings" icon={<LuLink size="18" />}>
               Account Settings
             </MenuItem>
-            <MenuItem
-              as={Link}
-              to={`${APP_URLS.AUTH}/logout`}
-              icon={<LuLogOut size="18" />}
-            >
+            <MenuItem as={Link} to={`/logout`} icon={<LuLogOut size="18" />}>
               Logout
             </MenuItem>
           </MenuList>

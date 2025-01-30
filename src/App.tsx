@@ -21,6 +21,7 @@ import Consultation from "./pages/consultation/Consultations";
 import VirtualCall from "./pages/VirtualCall";
 import PurchaseHistory from "./pages/PurchaseHistory";
 import RouteProtector from "./components/hocs/RouteProtector";
+import LogoutPage from "./pages/Logout";
 
 const GlobalStyles = css`
   /*
@@ -46,6 +47,7 @@ function App() {
             </RouteProtector>
           }
         />
+        <Route path="/logout" element={<LogoutPage />} />
         <Route
           path="/overview"
           element={
