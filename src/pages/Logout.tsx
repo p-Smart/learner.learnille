@@ -7,9 +7,9 @@ import waitForTimeout from "@/utils/waitForTimeout";
 const LogoutPage = () => {
   useEffect(() => {
     (async () => {
-      await waitForTimeout(2000);
+      await waitForTimeout(1000);
       Cookies.remove("accessToken");
-      window.location.href = APP_URLS.AUTH + "/login";
+      window.location.href = APP_URLS.PUBLIC + "/logout";
     })();
   }, []);
 
