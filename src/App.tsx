@@ -20,6 +20,7 @@ import Activities from "./pages/Notifications/Activities";
 import Consultation from "./pages/consultation/Consultations";
 import VirtualCall from "./pages/VirtualCall";
 import PurchaseHistory from "./pages/PurchaseHistory";
+import RouteProtector from "./components/hocs/RouteProtector";
 
 const GlobalStyles = css`
   /*
@@ -37,28 +38,158 @@ function App() {
     <BrowserRouter>
       <Global styles={GlobalStyles} />
       <Routes>
-        <Route path="/" element={<Navigate to="/overview" />} />
-        <Route path="/overview" element={<Overview />} />
-        <Route path="/chat" element={<Chat />} />
-        <Route path="/consultations" element={<Consultation />} />
-        <Route path="/marketplace" element={<MarketPlacePage />} />
-        <Route path="/settings" element={<Settings />} />
-        <Route path="/notifications" element={<Notifications />} />
-        <Route path="/notifications/activity" element={<Activities />} />
+        <Route
+          path="/"
+          element={
+            <RouteProtector>
+              <Navigate to="/overview" />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/overview"
+          element={
+            <RouteProtector>
+              <Overview />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/chat"
+          element={
+            <RouteProtector>
+              <Chat />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/consultations"
+          element={
+            <RouteProtector>
+              <Consultation />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/marketplace"
+          element={
+            <RouteProtector>
+              <MarketPlacePage />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/settings"
+          element={
+            <RouteProtector>
+              <Settings />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/notifications"
+          element={
+            <RouteProtector>
+              <Notifications />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/notifications/activity"
+          element={
+            <RouteProtector>
+              <Activities />
+            </RouteProtector>
+          }
+        />
         <Route
           path="/marketplace/consultation/:id"
-          element={<MKTConsultDetails />}
+          element={
+            <RouteProtector>
+              <MKTConsultDetails />
+            </RouteProtector>
+          }
         />
-        <Route path="/marketplace/course/:id" element={<CourseDetails />} />
-        <Route path="/cart" element={<MarketPlaceCart />} />
-        <Route path="/pay" element={<Pay />} />
-        <Route path="/my-certificate" element={<MyCerificate />} />
-        <Route path="/my-courses" element={<MyCourse />} />
-        <Route path="/my-courses/:id" element={<MyCourseDetails />} />
-        <Route path="/purchase-history" element={<PurchaseHistory />} />
-        <Route path="/wishlist" element={<WishList />} />
-        <Route path="/call" element={<VirtualCall />} />
-        <Route path="*" element={<NotFound />} />
+        <Route
+          path="/marketplace/course/:id"
+          element={
+            <RouteProtector>
+              <CourseDetails />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/cart"
+          element={
+            <RouteProtector>
+              <MarketPlaceCart />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/pay"
+          element={
+            <RouteProtector>
+              <Pay />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/my-certificate"
+          element={
+            <RouteProtector>
+              <MyCerificate />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/my-courses"
+          element={
+            <RouteProtector>
+              <MyCourse />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/my-courses/:id"
+          element={
+            <RouteProtector>
+              <MyCourseDetails />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/purchase-history"
+          element={
+            <RouteProtector>
+              <PurchaseHistory />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/wishlist"
+          element={
+            <RouteProtector>
+              <WishList />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="/call"
+          element={
+            <RouteProtector>
+              <VirtualCall />
+            </RouteProtector>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <RouteProtector>
+              <NotFound />
+            </RouteProtector>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
