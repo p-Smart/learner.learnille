@@ -1,10 +1,10 @@
 export const APP_URLS = {
-  PUBLIC: "https://public-learnille.vercel.app",
-  AUTH: "https://auth-learnille.vercel.app",
+  PUBLIC: "https://learnille.com",
+  AUTH: "https://auth.learnille.com",
   DASHBOARD: {
-    LEARNER: "https://learner-learnille.vercel.app",
-    CONSULTANT: "https://consultant-learnille.vercel.app",
-    INSTRUCTOR: "https://instructor-learnille.vercel.app",
+    LEARNER: "https://dashboard.learnille.com",
+    CONSULTANT: "https://consultant.learnille.com",
+    INSTRUCTOR: "https://instructor.learnille.com",
   },
 };
 
