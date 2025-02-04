@@ -4,12 +4,14 @@ import { LearnilleClient } from "@/utils/api";
 import Cookies from "js-cookie";
 import { APP_URLS } from "@/utils/constants";
 import { useToast } from "@chakra-ui/react";
+import useUserDataStore from "@/stores/user-data";
 
 type LoadingState = "loading" | "authenticated" | "unauthenticated";
 
 const RouteProtector: React.FC<PropsWithChildren> = ({ children }) => {
   const [loading, setLoading] = useState<LoadingState>("loading");
   const toast = useToast();
+  const setUserDataState = useUserDataStore((state) => state.setUserDataState);
 
   const verifyUser = async () => {
     try {
@@ -30,7 +32,7 @@ const RouteProtector: React.FC<PropsWithChildren> = ({ children }) => {
         window.location.href = APP_URLS.AUTH + "/login";
         return;
       }
-      localStorage.setItem("user", JSON.stringify(data));
+      setUserDataState("userData", data);
       setLoading("authenticated");
     } catch (err) {
       toast({ title: err.message, status: "error" });
