@@ -25,6 +25,11 @@ const RouteProtector: React.FC<PropsWithChildren> = ({ children }) => {
       }
 
       const { data } = await LearnilleClient.get("/user");
+      const userRoles = data.roles;
+      if (!userRoles.includes("student")) {
+        window.location.href = APP_URLS.AUTH + "/login";
+        return;
+      }
       localStorage.setItem("user", JSON.stringify(data));
       setLoading("authenticated");
     } catch (err) {
